@@ -13,7 +13,7 @@
 					echo '<h3>Succesvol ingelogd!</h3>';
 				elseif($_GET ['login'] == 'failed'){
 					$array = $_SESSION ['errors'];
-					for($i = 0; $i < count(array); $i++){
+					for($i = 0; $i < count($array); $i++){
 						echo '<strong>Fout '. $i . ': </strong>' . $array[$i] . '<br />';
 					}
 				}
